@@ -1,5 +1,5 @@
 /*
-Dentacoin Foundation Presale Bonus
+Dentacoin Foundation Presale Bonus   (Testnet)
 */
 
 pragma solidity ^0.4.11;
@@ -15,7 +15,7 @@ contract exToken {
 
 // Presale Bonus after Presale
 contract PresaleBonus {
-  uint public getBonusTime = 14 days;                                         // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
+  uint public getBonusTime = 14 minutes;                                         // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
   uint public startTime;                                                      // Time of contract deployment
   address public owner;                                                       // Owner of this contract, who may refund all remaining DCN and ETH
   exToken public tokenAddress;                                                // Address of the DCN token: 0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
@@ -29,7 +29,7 @@ contract PresaleBonus {
   function PresaleBonus() {                                                   // The function that is run only once at contract deployment
     owner = msg.sender;                                                       // Set the owner address to that account, which deploys this contract
     startTime = now;                                                          // Set the start time of the request period to the contract deployment time
-    tokenAddress = exToken(0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6);       // Define Dentacoin token address
+    tokenAddress = exToken(0x571280B600bBc3e2484F8AC80303F033b762048f);       // Define Dentacoin token address
   }
 
   //Send tiny amount of eth to request DCN bonus
