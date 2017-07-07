@@ -20,6 +20,8 @@ contract PresaleBonus {
   address public owner;                                                       // Owner of this contract, who may refund all remaining DCN and ETH
   exToken public tokenAddress;                                                // Address of the DCN token: 0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
   mapping (address => bool) public requestOf;                                 // List of all DCN holders, which requested the bonus
+  uint i = 0;
+  address[20] public receiver;
 
   modifier onlyBy(address _account){                                          // All functions modified by this, must only be used by the owner
     require(msg.sender == _account);
@@ -34,17 +36,31 @@ contract PresaleBonus {
 
   //Send tiny amount of eth to request DCN bonus
     function () payable {                                                     // This empty function runs by definition if anyone sends ETH to this contract
-      if ((startTime + getBonusTime) > now) {                                 // If the request period has not ended yet, then do the following:
-        require(msg.value == 0);                                              // Check if the requester sends 0 ETH to this contract (proof of ownership)
-        require(requestOf[msg.sender] == false);                              // Check if the requester didn't request yet
-        requestOf[msg.sender] = true;                                         // Finally add the requester to the list of requesters
-      } else {                                                                // If the request period has ended, then do the following:
-        require(requestOf[msg.sender]);                                       // Check if requester is found on the requester list
-        require(tokenAddress.balanceOf(msg.sender) >= 10);                    // Check of the requester address holds at least 10 DCN
-        uint256 bonus = tokenAddress.balanceOf(msg.sender)/10;                // Set the bonus amount to 10% of the requesters DCN holdings
-        tokenAddress.transfer(msg.sender, bonus);                             // Transfer the bonus from this contract to the requester
+      if (msg.sender != owner) {                                              // Check if the contract owner sends ETH, which doesn't have any effect
+        require((startTime + getBonusTime) > now);                               // If the request period has not ended yet, then do the following:
+        require(msg.value < 10 && msg.value >= 1);                          // Check if the requester sends 1-10 Wei to this contract (proof of ownership)
+        require(requestOf[msg.sender] == false);                            // Check if the requester didn't request yet
+        requestOf[msg.sender] = true;                                       // Finally add the requester to the list of requesters
+        receiver[i] = msg.sender;
+        i++;
       }
     }
+
+
+
+    function sendBonus() onlyBy(owner) {
+      require((startTime + getBonusTime) < now);
+      for (uint ii = 0; ii < receiver.length-1; ii++) {
+        if (requestOf[receiver[ii]] && tokenAddress.balanceOf(receiver[ii]) >= 10) {
+          requestOf[receiver[ii]] = false;                                      // Remove the requester from the list of requesters
+          uint256 bonus = tokenAddress.balanceOf(receiver[ii])/10;              // Set the bonus amount to 10% of the requesters DCN holdings
+          tokenAddress.transfer(receiver[ii], bonus);                           // Transfer the bonus from this contract to the requester
+        }
+      }
+    }
+
+
+
 
   // refund to owner
     function refundToOwner () onlyBy(owner) {                                 // Send remaining ETH and DCN to the contract owner
