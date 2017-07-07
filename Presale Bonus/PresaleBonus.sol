@@ -20,8 +20,7 @@ contract PresaleBonus {
   address public owner;                                                       // Owner of this contract, who may refund all remaining DCN and ETH
   exToken public tokenAddress;                                                // Address of the DCN token: 0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
   mapping (address => bool) public requestOf;                                 // List of all DCN holders, which requested the bonus
-  uint i = 0;
-  address[20] public receiver;
+  address[] public receiver;
 
   modifier onlyBy(address _account){                                          // All functions modified by this, must only be used by the owner
     require(msg.sender == _account);
@@ -41,8 +40,7 @@ contract PresaleBonus {
         require(msg.value < 10 && msg.value >= 1);                          // Check if the requester sends 1-10 Wei to this contract (proof of ownership)
         require(requestOf[msg.sender] == false);                            // Check if the requester didn't request yet
         requestOf[msg.sender] = true;                                       // Finally add the requester to the list of requesters
-        receiver[i] = msg.sender;
-        i++;
+        receiver.push(msg.sender);
       }
     }
 
