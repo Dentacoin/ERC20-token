@@ -29,19 +29,19 @@ contract PresaleBonus {
   }
 
   function PresaleBonus() {                                                   // The function that is run only once at contract deployment
-    owner = msg.sender;                                                       // Set the owner address to that account, which deploys this contract
+    owner = msg.sender;                                                       // Set the owner address to the account which deploys this contract
     startTime = now;                                                          // Set the start time of the request period to the contract deployment time
     tokenAddress = exToken(0x571280B600bBc3e2484F8AC80303F033b762048f);       // Define Dentacoin token address
   }
 
   //Send tiny amount of eth to request DCN bonus
     function () payable {                                                     // This empty function runs by definition if anyone sends ETH to this contract
-      if (msg.sender != owner) {                                              // Check if the contract owner sends ETH, which doesn't have any effect
-        require((startTime + getBonusTime) > now);                            // If the request period has not ended yet, then do the following:
-        require(msg.value < 10 && msg.value >= 1);                            // Check if the requester sends 1-10 Wei to this contract (proof of ownership)
-        require(requestOf[msg.sender] == false);                              // Check if the requester didn't request yet
+      if (msg.sender != owner) {                                              // Check if the contract owner sends ETH, which shouldn't have any effect
+        require((startTime + getBonusTime) > now);                            // Make sure that the request period has not ended yet
+        require(msg.value < 1000000000000000 && msg.value >= 1);              // Make sure that the requester sends 1 Wei - 0,001 ETH to this contract (proof of ownership)
+        require(requestOf[msg.sender] == false);                              // Make sure that the requester didn't request yet
         requestOf[msg.sender] = true;                                         // Finally add the requester to the list of requesters
-        receiver.push(msg.sender);
+        receiver.push(msg.sender);                                            // And add the requester to the array of receivers
       }
     }
 
