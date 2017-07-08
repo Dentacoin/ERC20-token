@@ -29,28 +29,28 @@ To further increase its relevance as a store of value, each Dentacoin is legally
 
 ## How to Contribute?
 
-Go straight to the [blog](https://dentacoin.com/blog) //TODO or [join our Slack](https://join.slack.com/dentacoin/shared_invite/MjA1NzE2Mzk5NzEyLTE0OTg4NDAwNzEtZmU4OWU3NDM1OA) or choose what interests you:
+Go straight to the [blog](https://dentacoin.com/blog) //TODO or [join our Slack](https://join.slack.com/dentacoin/shared_invite/MjA5Nzk0MzU1OTg2LTE0OTk0ODk4MzQtNzViNzFiZjk4OQ) or choose what interests you:
 
 - **Earn Dentacoins as a patient**
 As a patient of a Dentacoin partner clinic you will be rewarded for helping them with feedback surveys, writing online reviews or referring them to a friend. Earn Dentacoins by helping improve the quality of dental services worldwide! Dentacoin partner clinics.
 
-- **Spread the word and earn Dentacoins** 
+- **Spread the word and earn Dentacoins**
 You intend to publish an article, a blog post or a comment about Dentacoin? We appreciate and reward all relevant references that spread our idea, current state and future projects. We will be happy to provide you with all the information needed.
 
-- **Buy Dentacoins** 
+- **Buy Dentacoins**
 Buy Dentacoins for Ether (ETH) right here in your Account. You don’t have Ether? Get some here. Do you already own other cryptocurrencies like Augur, ICONOMI or Digix Global? Trade Dentacoins against most other Ethereum based tokens via EtherDelta exchange.
 
 - **Developer**  
 Developers are the heart of software and to keep Dentacoin beating we need all the help we can get!
- 
+
 - **Community Management**  
 Metcalfe's law states that the value of a network is proportional to the square of the number of connected users of the system - without community Dentacoin is meaningless. We're looking to create a positive, fun environment to explore new ideas, experiment and grow the Dentacoin community. Building a community takes alot of work but the people you'll meet and long lasting relationships you form will be well worth it.
 
 - **Blog Writing**  
-Content is King, keeping our blog up to date and informing the community of news helps keep everyone on the same page. [Jump on our Slack](https://join.slack.com/dentacoin/shared_invite/MjA1NzE2Mzk5NzEyLTE0OTg4NDAwNzEtZmU4OWU3NDM1OA) and discuss with us how you can contribute.
+Content is King, keeping our blog up to date and informing the community of news helps keep everyone on the same page. [Jump on our Slack](https://join.slack.com/dentacoin/shared_invite/MjA5Nzk0MzU1OTg2LTE0OTk0ODk4MzQtNzViNzFiZjk4OQ) and discuss with us how you can contribute.
 
 - **Marketing**  
-In this day and age attention is limited, we need all the help we can get to find people who are interested in Dentacoin, whether that is paid user aquisition, public relations or hype building, [Jump on our Slack](https://join.slack.com/dentacoin/shared_invite/MjA1NzE2Mzk5NzEyLTE0OTg4NDAwNzEtZmU4OWU3NDM1OA) to see how you can spread the word.
+In this day and age attention is limited, we need all the help we can get to find people who are interested in Dentacoin, whether that is paid user aquisition, public relations or hype building, [Jump on our Slack](https://join.slack.com/dentacoin/shared_invite/MjA5Nzk0MzU1OTg2LTE0OTk0ODk4MzQtNzViNzFiZjk4OQ) to see how you can spread the word.
 
 - **Testers**  
 It's bug hunting season! Dentacoin is currently in Alpha and there are sure to be a bunch of education, download Metamask, uPort or Status.im for testing dentacoin.com. Every bug you find brings Dentacoin closer to stable, usable software for everyone to enjoy!
@@ -78,7 +78,7 @@ The Founder. Highly respected University lecturer. More than 27 years experience
 - **JEREMIAS GRENZEBACH**
 Co-Founder / Core Developer
 
-Our Code Wizard. Early entrant into the Blockchain scene. Immersed within the peer-to-peer technology for 8 years. Contributor to Ethereum, Waves, ZCash, uPort, Status, imToken, Byteball. Strong believer in decentralization and transparency. 
+Our Code Wizard. Early entrant into the Blockchain scene. Immersed within the peer-to-peer technology for 8 years. Contributor to Ethereum, Waves, ZCash, uPort, Status, imToken, Byteball. Strong believer in decentralization and transparency.
 
 - **PHILIPP GRENZEBACH**
 Co-Founder / Business Developer / M&A
@@ -114,7 +114,7 @@ Our Transformation Accelerator. Computer science and Blockchain enthusiast. Degr
 - **DR. DIMO DASKAoV**
 Dental Industry Development Catalyst
 
-The   Strongest Link between DCN and the Dental Industry. Leading dentist, currently managing a team of 19 dentists. Educator    in Prosthetic Dentistry. Constantly improving dental services by implementing future technologies, delivering “WOW” patient experience and simultaneously reducing the costs. Eager to be a part of the paradigm shift. 
+The   Strongest Link between DCN and the Dental Industry. Leading dentist, currently managing a team of 19 dentists. Educator    in Prosthetic Dentistry. Constantly improving dental services by implementing future technologies, delivering “WOW” patient experience and simultaneously reducing the costs. Eager to be a part of the paradigm shift.
 
 - **DR. IVAN PEEV**
 Dentistry 4.0 Specialist
@@ -165,7 +165,7 @@ Advisor
 
 ## Contact us
 
-Feel free to email us at [admin@dentacoin.com](mailto:admin@dentacoin.com) or better yet, [join our Slack](https://dentacoin.signup.team). 
+Feel free to email us at [admin@dentacoin.com](mailto:admin@dentacoin.com) or better yet, [join our Slack](https://dentacoin.signup.team).
 
 ## License
 
