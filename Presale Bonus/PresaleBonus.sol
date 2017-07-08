@@ -15,12 +15,13 @@ contract exToken {
 
 // Presale Bonus after Presale
 contract PresaleBonus {
-  uint public getBonusTime = 14 minutes;                                         // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
+  uint public getBonusTime = 14 minutes;                                      // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
   uint public startTime;                                                      // Time of contract deployment
   address public owner;                                                       // Owner of this contract, who may refund all remaining DCN and ETH
   exToken public tokenAddress;                                                // Address of the DCN token: 0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
+
   mapping (address => bool) public requestOf;                                 // List of all DCN holders, which requested the bonus
-  address[] public receiver;
+  address[] public receiver;                                                  // Array to iterate threw this receivers and send the bonus to them
 
   modifier onlyBy(address _account){                                          // All functions modified by this, must only be used by the owner
     require(msg.sender == _account);
@@ -36,10 +37,10 @@ contract PresaleBonus {
   //Send tiny amount of eth to request DCN bonus
     function () payable {                                                     // This empty function runs by definition if anyone sends ETH to this contract
       if (msg.sender != owner) {                                              // Check if the contract owner sends ETH, which doesn't have any effect
-        require((startTime + getBonusTime) > now);                               // If the request period has not ended yet, then do the following:
-        require(msg.value < 10 && msg.value >= 1);                          // Check if the requester sends 1-10 Wei to this contract (proof of ownership)
-        require(requestOf[msg.sender] == false);                            // Check if the requester didn't request yet
-        requestOf[msg.sender] = true;                                       // Finally add the requester to the list of requesters
+        require((startTime + getBonusTime) > now);                            // If the request period has not ended yet, then do the following:
+        require(msg.value < 10 && msg.value >= 1);                            // Check if the requester sends 1-10 Wei to this contract (proof of ownership)
+        require(requestOf[msg.sender] == false);                              // Check if the requester didn't request yet
+        requestOf[msg.sender] = true;                                         // Finally add the requester to the list of requesters
         receiver.push(msg.sender);
       }
     }
