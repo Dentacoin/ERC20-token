@@ -48,12 +48,12 @@ contract PresaleBonus {
 
 
     function sendBonus() onlyBy(owner) {
-      require((startTime + getBonusTime) < now);
-      for (uint ii = 0; ii < receiver.length-1; ii++) {
-        if (requestOf[receiver[ii]] && tokenAddress.balanceOf(receiver[ii]) >= 10) {
-          requestOf[receiver[ii]] = false;                                      // Remove the requester from the list of requesters
-          uint256 bonus = tokenAddress.balanceOf(receiver[ii])/10;              // Set the bonus amount to 10% of the requesters DCN holdings
-          tokenAddress.transfer(receiver[ii], bonus);                           // Transfer the bonus from this contract to the requester
+      require((startTime + getBonusTime) < now);                              // Make sure that the request period has ended
+      for (uint i = 0; i < receiver.length-1; i++) {                          // Iterate threw the list of receivers TODO: check iteration
+        if (requestOf[receiver[i]] && tokenAddress.balanceOf(receiver[i]) >= 20) { // TODO: First check needed?
+          requestOf[receiver[i]] = false;                                      // Remove the requester from the list of requesters
+          uint256 bonus = tokenAddress.balanceOf(receiver[i])/20;              // Set the bonus amount to 5% of the requesters DCN holdings
+          tokenAddress.transfer(receiver[i], bonus);                           // Transfer the bonus from this contract to the requester
         }
       }
     }
