@@ -50,7 +50,7 @@ contract PresaleBonus {
     function sendBonus() onlyBy(owner) {
       require((startTime + getBonusTime) < now);                              // Make sure that the request period has ended
       for (uint i = 0; i < receiver.length-1; i++) {                          // Iterate threw the list of receivers TODO: check iteration
-        if (requestOf[receiver[i]] && tokenAddress.balanceOf(receiver[i]) >= 20) { // TODO: First check needed?
+        if (requestOf[receiver[i]] && tokenAddress.balanceOf(receiver[i]) >= 200) { // TODO: First check needed? AND: try with balance 21 and 39!
           requestOf[receiver[i]] = false;                                      // Remove the requester from the list of requesters
           uint256 bonus = tokenAddress.balanceOf(receiver[i])/20;              // Set the bonus amount to 5% of the requesters DCN holdings
           tokenAddress.transfer(receiver[i], bonus);                           // Transfer the bonus from this contract to the requester
@@ -68,4 +68,16 @@ contract PresaleBonus {
         }
         tokenAddress.transfer(owner, tokenAddress.balanceOf(this));           // Send DCN to the owner
     }
+
+
+
+
+    // web3 getter functions
+    function receiverID(uint256 _id) constant returns (address receiver) {
+            return receiver[_id];
+        }
+    function balanceOf(address _owner) constant returns (uint256 balance) {
+            return tokenAddress.balanceOf(_owner);
+        }
+
 }
