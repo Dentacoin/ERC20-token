@@ -1,5 +1,5 @@
 /*
-Dentacoin Foundation Presale Bonus   (Testnet)
+Dentacoin Foundation Presale Bonus
 */
 
 pragma solidity ^0.4.11;
@@ -15,7 +15,7 @@ contract exToken {
 
 // Presale Bonus after Presale
 contract PresaleBonus {
-  uint public getBonusTime = 14 minutes;                                      // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
+  uint public getBonusTime = 14 days;                                      // Time span from contract deployment to end of bonus request period. Afterwards bonus will be paid out
   uint public startTime;                                                      // Time of contract deployment
   address public owner;                                                       // Owner of this contract, who may refund all remaining DCN and ETH
   exToken public tokenAddress;                                                // Address of the DCN token: 0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6
@@ -31,7 +31,7 @@ contract PresaleBonus {
   function PresaleBonus() {                                                   // The function that is run only once at contract deployment
     owner = msg.sender;                                                       // Set the owner address to the account which deploys this contract
     startTime = now;                                                          // Set the start time of the request period to the contract deployment time
-    tokenAddress = exToken(0x571280B600bBc3e2484F8AC80303F033b762048f);       // Define Dentacoin token address
+    tokenAddress = exToken(0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6);       // Define Dentacoin token address
   }
 
   //Send tiny amount of eth to request DCN bonus
@@ -50,7 +50,7 @@ contract PresaleBonus {
     function sendBonus() onlyBy(owner) {
       require((startTime + getBonusTime) < now);                              // Make sure that the request period has ended
       for (uint i = 0; i < receiver.length-1; i++) {                          // Iterate threw the list of receivers TODO: check iteration
-        if (requestOf[receiver[i]] && tokenAddress.balanceOf(receiver[i]) >= 200) { // TODO: First check needed? AND: try with balance 201 and 399!
+        if (requestOf[receiver[i]] && tokenAddress.balanceOf(receiver[i]) >= 200) { // TODO: First check needed?
           requestOf[receiver[i]] = false;                                      // Remove the requester from the list of requesters
           uint256 bonus = tokenAddress.balanceOf(receiver[i])/20;              // Set the bonus amount to 5% of the requesters DCN holdings
           tokenAddress.transfer(receiver[i], bonus);                           // Transfer the bonus from this contract to the requester
