@@ -32,7 +32,7 @@ Every year a certain amount will be released:
 */
 
 
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.15;
 
 //Dentacoin token import
 contract exToken {
@@ -68,8 +68,7 @@ contract DentacoinTimeLock {
 
   function withdraw() onlyBy(owner) {
     lockedAmount = tokenAddress.balanceOf(this);
-    if ((startTime + lockTime) < now) {
-      tokenAddress.transfer(owner, lockedAmount);
-    } else { throw; }
+    require((startTime + lockTime) < now);
+    tokenAddress.transfer(owner, lockedAmount);
   }
 }
