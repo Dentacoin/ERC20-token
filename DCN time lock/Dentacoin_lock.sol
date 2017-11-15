@@ -1,5 +1,5 @@
 /*
-Dentacoin Foundation TimeLock Contract 2018
+Dentacoin Foundation TimeLock Contract 2043
 
 6 088 888 888 888 DCN will be locked in total
 Every year a certain amount will be released:
@@ -36,7 +36,7 @@ pragma solidity ^0.4.15;
 
 //Dentacoin token import
 contract exToken {
-  function transfer(address, uint256) returns (bool) {  }
+  function transfer(address, uint256) constant returns (bool) {  }
   function balanceOf(address) constant returns (uint256) {  }
 }
 
@@ -44,9 +44,9 @@ contract exToken {
 // Timelock
 contract DentacoinTimeLock {
 
-  uint constant public year = 2018;
+  uint constant public year = 2043;
   address public owner;
-  uint public lockTime = 192 days;
+  uint public lockTime = 9178 days;
   uint public startTime;
   uint256 lockedAmount;
   exToken public tokenAddress;
