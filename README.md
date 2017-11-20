@@ -28,8 +28,9 @@ As for the dentists, Dentacoin will allow them to:
 ## Jumping over the Dentistry Borders. 
 Dentacoin also plans on developing a decentralized, highly secure database of all patient health records. Health Data will be highly protected, updatable and accessible exclusively by patients or by dentists, upon a given permission. This kind of database would simplify the lives of both patients and dentists when searching for health records and would help provide the most accurate diagnostics. 
 
-## Indirect Profit Sharing. 
-In order to create prerequisites for a long-term increase in value, Dentacoin will implement a unique approach of indirect profit sharing for all Dentacoin holders. Once a year, the Dentacoin Foundation will buy DCN with 50% of all profits gained throughout the last financial year. These include interests from assets, profits of the clinics bought by the Foundation and any other return on investment. Thus, the global DCN supply decreases and in return, the demand and the market price increase.
+## Possibility of Indirect Profit Sharing. 
+Once a year, there is a possibility that the Dentacoin Foundation will be able to change back the Dentacoin tokens from market for Ether or Bitcoin with up to 50% of the operating profit. This will have the effect that the global DCN supply decreases.
+On the other hand, the Dentacoin Foundation may use the 50% of the operating profit to reinvest into the tools that are being developed by the Dentacoin Foundation. The decision how to use the resources - including any profits and liquidation proceeds - will be only and at every time in the hands of the management of the foundation. The operating profit includes interests from assets, profits of the clinics bought by the Foundation and any other return on investment.
 
 ## How to Contribute?
 
