@@ -1,7 +1,7 @@
 /*
 Dentacoin Foundation TimeLock Contract 2043
 
-6 088 888 888 888 DCN will be locked in total
+6 158 604 361 608 DCN will be locked in total
 Every year a certain amount will be released:
 01/01/2018 = 121777777777   //2% Contract Address: 0x3668F174859271c88537d633a2Cac59de26B0641
 01/01/2019 = 182666666666   //3% Contract Address: 0xf20fC45f6e6204C3C0a97da219D714937CA7321D
@@ -28,7 +28,8 @@ Every year a certain amount will be released:
 01/01/2040 = 121777777777   //2% Contract Address: 0x918cddD8394bDb7C258bAc66E3DBa4f47078BE87
 01/01/2041 = 121777777777   //2% Contract Address: 0xa3f9Fe2E8bf25E48E5098cBd48b16B88e7D4742A
 01/01/2042 = 121777777777   //2% Contract Address: 0xC8C1a15d6Be8eC0c923a3D251AB85935223d2105
-01/01/2042 = everything else     Contract Address: 0x24f4F418adc1007F90763a47493aDe189DeFD7Ed
+01/01/2042 = 312015856340   //5%     Contract Address: 0x24f4F418adc1007F90763a47493aDe189DeFD7Ed
+01/01/2043 = everything else     Contract Address: 0x787ac420CB08fB3391E96FC5f6F7A4C18C74502E
 */
 
 
