@@ -22,17 +22,13 @@ Dentacoin is the one and only cryptocurrency in the world that connects all part
 
 Communication and attention are the key components on which every relationship builds. The Dentacoin Foundation has already developed four Blockchain-based software applications intended to facilitate and leverage the interaction between patients and dentists.
 
-• [DentaVox](https://dentavox.dentacoin.com)
-An online market research platform surveying users (patients) on various dental health topics and providing key results publicly.
+• [DentaVox](https://dentavox.dentacoin.com) - An online market research platform surveying users (patients) on various dental health topics and providing key results publicly.
 
-• [Trusted Reviews](https://reviews.dentacoin.com/)
-The first platform for detailed, verified and incentivized dental treatment reviews written by patients with verified identities.
+• [Trusted Reviews](https://reviews.dentacoin.com/) - The first platform for detailed, verified and incentivized dental treatment reviews written by patients with verified identities.
 
-• [Dentacare Mobile app](https://dentacare.dentacoin.com/)
-A mobile app which teaches kids and adults to maintain good oral hygiene through a 3-month, incentivized challenge.
+• [Dentacare Mobile app](https://dentacare.dentacoin.com/) - A mobile app which teaches kids and adults to maintain good oral hygiene through a 3-month, incentivized challenge.
 
-• [Dentacoin Wallet dApp](https://wallet.dentacoin.com/)
-Allows users to easily and securely store, send, receive DCN tokens, as well as buy DCN against fiat and crypto currencies.
+• [Dentacoin Wallet dApp](https://wallet.dentacoin.com/) - Allows users to easily and securely store, send, receive DCN tokens, as well as buy DCN against fiat and crypto currencies.
 
 
 ## DENTACOIN ASSURANCE
