@@ -1,6 +1,6 @@
 # Dentacoin - The First Blockchain Solution for the Global Dental Industry
 
-[Verify Contract](https://etherscan.io/token/0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6)
+[Verify Contract](https://etherscan.io/token/0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6){:target="_blank"}
 
 Founded in March 2017, the Netherlands-based Dentacoin Foundation develops the first Blockchain solution for the global dental industry.
 
