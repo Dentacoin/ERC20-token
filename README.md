@@ -50,10 +50,15 @@ Another central project to be developed by the Dentacoin Foundation is a decentr
 
 
 ## Useful links
+
 Official Website: https://dentacoin.com/
+
 Corporate Identity: https://dentacoin.com/corporate-identity/
+
 Corporate Design Manual: https://dentacoin.com/corporate-design/
+
 Partner Network: https://dentacoin.com/partner-network
+
 Partner Testimonials: https://dentacoin.com/testimonials/page/1 
 
 Dentacoin Blog: https://blog.dentacoin.com/ 
