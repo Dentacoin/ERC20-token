@@ -1,6 +1,6 @@
 time lock contract unlock how to:
 
-1. Open MyCrypto Legacy Desktop App. (https://github.com/MyCryptoHQ/mycrypto.com/releases)
+1. Open MyCrypto Legacy Desktop index.html -> (https://github.com/MyCryptoHQ/mycrypto.com/releases)
 2. Generate new OFFLINE transaction from 0xd560be7e053f6bdb113c2814faa339e29f4a385f
 3. In cold storage go to MEW and Offline Transactions. 
   - In data field paste: 0x3ccfd60b
