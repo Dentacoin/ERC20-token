@@ -1,8 +1,15 @@
 time lock contract unlock how to:
 
-1. Open MyCrypto Desktop App.
-2. Use private keys from cold storage for contract owner: 0xd560Be7E053f6bDB113C2814Faa339e29f4a385f
-3. Go to contracts and enter address & ABI according to the year:
+1. Open MyCrypto Legacy Desktop App. (https://github.com/MyCryptoHQ/mycrypto.com/releases)
+2. Generate new OFFLINE transaction from 0xd560be7e053f6bdb113c2814faa339e29f4a385f
+3. In cold storage go to MEW and Offline Transactions. 
+  - In data field paste: 0x3ccfd60b
+  - gas limit: 100.000 
+4. Use private keys from cold storage for contract owner: 0xd560Be7E053f6bDB113C2814Faa339e29f4a385f
+5. Sign transaction and scan signed qr code.
+6. Paste tx in MyCrypto and broadcast
+
+Addresses and ABIs for each year:
 
 2018	0x3668F174859271c88537d633a2Cac59de26B0641
 [ { "constant": true, "inputs": [], "name": "lockTime", "outputs": [ { "name": "", "type": "uint256", "value": "16588800" } ], "payable": false, "type": "function", "signature": "0x0d668087" }, { "constant": false, "inputs": [], "name": "withdraw", "outputs": [], "payable": false, "type": "function", "signature": "0x3ccfd60b" }, { "constant": true, "inputs": [], "name": "startTime", "outputs": [ { "name": "", "type": "uint256", "value": "1498243603" } ], "payable": false, "type": "function", "signature": "0x78e97925" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [ { "name": "", "type": "address", "value": "0xd560Be7E053f6bDB113C2814Faa339e29f4a385f" } ], "payable": false, "type": "function", "signature": "0x8da5cb5b" }, { "constant": true, "inputs": [], "name": "tokenAddress", "outputs": [ { "name": "", "type": "address", "value": "0x08d32b0da63e2C3bcF8019c9c5d849d7a9d791e6" } ], "payable": false, "type": "function", "signature": "0x9d76ea58" }, { "constant": true, "inputs": [], "name": "year", "outputs": [ { "name": "", "type": "uint256", "value": "2018" } ], "payable": false, "type": "function", "signature": "0xf3269716" }, { "inputs": [], "payable": false, "type": "constructor" }, { "payable": true, "type": "fallback" } ]
